@@ -4,8 +4,7 @@
 FROM jupyter/base-notebook:6d42503c684f
 
 #install required python libraries
-RUN conda update -n base conda && \
-    conda install -q -y scikit-learn scipy pandas numpy seaborn matplotlib IPython
+RUN conda install -q -y scikit-learn scipy pandas numpy seaborn matplotlib IPython
 
 
 #Copy primary notebook
